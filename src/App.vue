@@ -20,14 +20,19 @@
         <div class="section-details-call-to-action">
           <a href="/">See how Fylo works <img src='./assets/img/icon-arrow.svg' alt="Icon Arrow" /></a>
         </div>
-        <!-- <Card 
-          avatar='../assets/img/avatar-testimonial.jpg'
+        <Card 
+          avatar='avatar-testimonial.jpg'
           userName='Kyle Burton'
           userDetails='Founder & CEO, Huddle'
           content='Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-olled collaboration machine.'
-        /> -->
+        />
       </Section>
     </Container>
+
+    <Container>
+      <Newsletter />
+    </Container>
+
   </div>
 </template>
 
@@ -36,6 +41,8 @@
   import Section from './components/Section.vue'
   import Curve from './components/Curve.vue'
   import Container from './components/Container.vue'
+  import Card from './components/Card.vue'
+  import Newsletter from './components/Newsletter.vue'
 
 
   export default {
@@ -44,7 +51,9 @@
       Header,
       Section,
       Curve,
-      Container
+      Container,
+      Card,
+      Newsletter
     }
   }
 </script>
