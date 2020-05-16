@@ -33,6 +33,8 @@
       <Newsletter />
     </Container>
 
+    <Footer />
+
   </div>
 </template>
 
@@ -43,6 +45,7 @@
   import Container from './components/Container.vue'
   import Card from './components/Card.vue'
   import Newsletter from './components/Newsletter.vue'
+  import Footer from './components/Footer.vue'
 
 
   export default {
@@ -53,7 +56,8 @@
       Curve,
       Container,
       Card,
-      Newsletter
+      Newsletter,
+      Footer
     }
   }
 </script>
