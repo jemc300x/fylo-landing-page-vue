@@ -2,9 +2,9 @@
   <header class="header">
     <img class="header-logo" src="../assets/img/logo.svg" alt="Logo">
     <ul class="header-navbar">
-      <li><a href="/">Features</a></li>
-      <li><a href="/">Team</a></li>
-      <li><a href="/">Sing In</a></li>
+      <li><a class="header-navbar__link" href="/">Features</a></li>
+      <li><a class="header-navbar__link" href="/">Team</a></li>
+      <li><a class="header-navbar__link" href="/">Sing In</a></li>
     </ul>
   </header>
 </template>
@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .header{
     max-width: var(--desktop-width);
     display: flex;
@@ -41,7 +41,7 @@ export default {
     margin-right: 10px;
   }
 
-  .header-navbar a {
+  .header-navbar__link {
     text-decoration: none;
   }
 
