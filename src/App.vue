@@ -12,21 +12,22 @@
     </Section>
 
     <Curve />
-    
-    <!-- <Section imgUrl="illustration-1.svg" imgTextAlt="Illustration 1" >
-      <h2>Stay productive, wherever your are</h2>
-      <p class='text-aling-start'>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
-      <p class='text-aling-start'>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
-      <div class="section-details-call-to-action">
-        <a href="/">See how Fylo works <img src='./assets/img/icon-arrow.svg' alt="Icon Arrow" /></a>
-      </div>
-      <Card 
-        avatar='../assets/img/avatar-testimonial.jpg'
-        userName='Kyle Burton'
-        userDetails='Founder & CEO, Huddle'
-        content='Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-olled collaboration machine.'
-      />
-    </Section> -->
+    <Container color="--Light-Grayish-Blue">
+      <Section imgUrl="illustration-1.svg" imgTextAlt="Illustration 1" >
+        <h2>Stay productive, wherever your are</h2>
+        <p class='text-aling-start'>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+        <p class='text-aling-start'>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
+        <div class="section-details-call-to-action">
+          <a href="/">See how Fylo works <img src='./assets/img/icon-arrow.svg' alt="Icon Arrow" /></a>
+        </div>
+        <!-- <Card 
+          avatar='../assets/img/avatar-testimonial.jpg'
+          userName='Kyle Burton'
+          userDetails='Founder & CEO, Huddle'
+          content='Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-olled collaboration machine.'
+        /> -->
+      </Section>
+    </Container>
   </div>
 </template>
 
@@ -34,7 +35,7 @@
   import Header from './components/Header.vue'
   import Section from './components/Section.vue'
   import Curve from './components/Curve.vue'
-
+  import Container from './components/Container.vue'
 
 
   export default {
@@ -42,7 +43,8 @@
     components: {
       Header,
       Section,
-      Curve
+      Curve,
+      Container
     }
   }
 </script>
