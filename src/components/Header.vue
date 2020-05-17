@@ -1,10 +1,12 @@
 <template>
   <header class="header">
-    <img class="header-logo" src="../assets/img/logo.svg" alt="Logo">
+    <router-link to="/">
+      <img class="header-logo" src="../assets/img/logo.svg" alt="Logo" />
+    </router-link>
     <ul class="header-navbar">
-      <li><a class="header-navbar__link" href="/">Features</a></li>
-      <li><a class="header-navbar__link" href="/">Team</a></li>
-      <li><a class="header-navbar__link" href="/">Sing In</a></li>
+      <li><router-link class="header-navbar__link" to="/features">Features</router-link></li>
+      <li><router-link class="header-navbar__link" to="/team">Team</router-link></li>
+      <li><router-link class="header-navbar__link" to="/singin">Sing In</router-link></li>
     </ul>
   </header>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <div class="column1">
-      <a href="/" use:link>
+      <router-link to="/" >
           <svg width="166" height="49" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <defs>
             <path id="a" d="M.014.03h93.96v48.29H.015z"/>
@@ -19,35 +19,35 @@
               </g>
             </g>
           </svg>
-      </a>
-      <p><span><img src="../assets/img/icon-phone.svg" alt="" /></span> Phone: <a href="tel://+1531234567">+1-543-123-4567</a></p>
-      <p><span><img src="../assets/img/icon-email.svg" alt="" /></span> <a href="mailto://example@fylo.com">example@fylo.com</a></p>
+      </router-link>
+      <p><span><img src="../assets/img/icon-phone.svg" alt="" /></span> Phone: <router-link to="tel://+1531234567">+1-543-123-4567</router-link></p>
+      <p><span><img src="../assets/img/icon-email.svg" alt="" /></span> <router-link to="mailto://example@fylo.com">example@fylo.com</router-link></p>
     </div>
     <div class="column2">
       <ul>
-        <li><a href="/about" use:link>About Us</a></li>
-        <li><a href="/jobs" use:link>Jobs</a></li>
-        <li><a href="/press" use:link>Press</a></li>
-        <li><a href="/blog" use:link>Blog</a></li>
+        <li><router-link to="/about" >About Us</router-link></li>
+        <li><router-link to="/jobs" >Jobs</router-link></li>
+        <li><router-link to="/press" >Press</router-link></li>
+        <li><router-link to="/blog" >Blog</router-link></li>
       </ul>
     </div>
     <div class="column3">
       <ul>
-        <li><a href="/contact" use:link>Contact Us</a></li>
-        <li><a href="/Terms" use:link>Terms</a></li>
-        <li><a href="/privacy" use:link>Privacy</a></li>
+        <li><router-link to="/contact" >Contact Us</router-link></li>
+        <li><router-link to="/Terms" >Terms</router-link></li>
+        <li><router-link to="/privacy" >Privacy</router-link></li>
       </ul>
     </div>
     <div class="column4">
-      <a href="/">
+      <router-link to="/">
         <i class="fab fa-facebook fa-2x" />
-      </a>
-      <a href="https://twitter.com/jemc300x">
+      </router-link>
+      <router-link to="https://twitter.com/jemc300x">
         <i class="fab fa-twitter fa-2x" />
-      </a>
-      <a href="/">
+      </router-link>
+      <router-link to="/">
         <i class="fab fa-instagram fa-2x" />
-      </a>
+      </router-link>
     </div>
   </footer>
 </template>
